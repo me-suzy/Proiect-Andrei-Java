@@ -1,0 +1,25 @@
+JTable - Table Model
+	 Table Cell Render
+	 Table Cell Editor
+------------------------------
+Table Model - Default Table Model ( o interfata, care este asociata)
+	getValueAt(idxRow,idxColumn)
+	setValueat(valoare,idxRow,idxColumn)
+	getRowCount() - returneaza nr de linii
+	getColumnCount()
+	getColumnName(idxColumn)
+	getColumnClass() - ce tip de data vor avea valorile din fiecar coloana
+	isCellEditable(idxRow,idxColumn)
+---------------------------------------------
+	
+	---Table Cell Render---
+ .getTableCellRendererComponent(grid,valoare,isSelected,lasFocus,idxRow,idxColumn)
+
+	---Table Cell Editor---
+ .getTableCellEditorComponent(grid,valoare,isSelected,idxRow,idxColumn)
+ .getCellEditorValue()
+		- e instantiat din defaultCellEditor
+					*Component     .getComponent()
+FormatedEditor
+	*.getTablecellEditorComponent()
+			returnthis.getComponent()
